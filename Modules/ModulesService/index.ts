@@ -30,5 +30,5 @@ export class ModulesService {
 }
 
 export * from "./BaseModule"
-export {RegisterInversifyJS as Type} from "./Declarations/Register.Inversify";
+export {RegisterInversifyJS as Inject} from "./Declarations/Register.Inversify";
 export const service = new ModulesService();

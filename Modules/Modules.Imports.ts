@@ -1,3 +1,2 @@
-import "./Modules.Register";
-import "./TestModule";
-import "./TestModuleB";
+import "./ExampleModule";
+import "./TestCase";
