@@ -3,7 +3,7 @@ import { ModuleSystem } from "../Modules.Entry";
 import * as namespace from "./namespace";
 import {inject} from "inversify";
 
-@ModuleSystem.service.Define("TestCase")
+@ModuleSystem.service.DefineSingleton("TestCase")
 export class TestCase extends ModuleSystem.BaseModule {
     public namespace = namespace;
 

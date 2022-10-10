@@ -1,3 +1,3 @@
-import * as imports from "./ModulesService";
+import * as imports from "./ModuleService";
 
 export {imports as ModuleSystem};

@@ -3,7 +3,7 @@ import { ModuleSystem } from "../Modules.Entry";
 import * as namespace from "./namespace";
 import {TestItem} from "./namespace";
 
-@ModuleSystem.service.Define("ExampleModule")
+@ModuleSystem.service.DefineSingleton("ExampleModule")
 export class ExampleModule extends ModuleSystem.BaseModule {
     public namespace = namespace;
 

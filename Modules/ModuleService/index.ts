@@ -10,9 +10,9 @@ export const Alias = {} as {[id in TAliasType]: id};
 export class ModulesService {
     public container: Container = new Container();
 
-    Define(moduleName: keyof typeof Register.ModuleService) {
+    DefineSingleton(moduleName: keyof typeof Register.ModuleService) {
         if (Alias[moduleName]) throw new Error(`Singleton ${moduleName} already exists`);
-        
+
         // @ts-ignore
         Alias[moduleName] = moduleName;
         console.log("[MODULES] Define ::", moduleName);
